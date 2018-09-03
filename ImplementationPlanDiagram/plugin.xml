@@ -1,0 +1,29 @@
+<plugin
+		id="com.vp.plugin.sample.implementationPlanPlugin"
+		name="Implementation Plan Diagram plugin"
+		description="Sample plugin for generating Implementation Plan Diagram"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.implementationPlanPlugin.ImplementationPlanPlugin">
+	
+	<actionSets>
+  		<actionSet id="com.vp.plugin.sample.implementationPlanPlugin.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.implementationPlanPlugin.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.implementationPlanPlugin.actionset1.ImplementationPlanActionControl"
+					actionType="generalAction"
+      		name="Implementation Plan Diagram plugin"
+		      description="Sample plugin for generating Implementation Plan Diagram"
+					style="normal"
+          icon="icon/plugin_icon.png"
+          tooltip="Implementation Plan Diagram"
+					toolbarPath="com.vp.plugin.sample.implementationPlanPlugin.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.implementationPlanPlugin.ImplementationPlanAction"/>
+			</action>
+		</actionSet>
+
+	</actionSets>	
+</plugin>
